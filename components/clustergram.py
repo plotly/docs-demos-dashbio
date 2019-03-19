@@ -1,9 +1,6 @@
-import dash
-from dash.dependencies import Input, Output
 import dash_html_components as html
 import dash_core_components as dcc
 import dash_bio as dashbio
-import dash_daq as daq
 import base64
 import pandas as pd
 

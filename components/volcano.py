@@ -1,10 +1,13 @@
 import dash_html_components as html
+import dash_core_components as dcc
 import dash_bio as dashbio
-import urllib.request as urlreq
 import base64
+import pandas as pd
 
-
-# copy docs code here
+df = pd.read_csv("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/volcano_data1.csv")
+component = dcc.Graph(figure=dashbio.VolcanoPlot(
+  dataframe=df
+))
 
 component_image = html.Img(
     src='data:image/png;base64,{}'.format(
@@ -17,8 +20,6 @@ component_image = html.Img(
     style={'width': '100%'}
 )
 
-component = ''
-
 
 def callbacks(app):
-    return 
+    return

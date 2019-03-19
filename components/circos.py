@@ -1,8 +1,5 @@
-import dash
-from dash.dependencies import Input, Output
 import dash_html_components as html
 import dash_bio as dashbio
-import dash_daq as daq
 import urllib.request as urlreq
 import base64
 import json
