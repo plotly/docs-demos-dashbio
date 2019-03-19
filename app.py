@@ -52,7 +52,7 @@ def change_img(show_live, app_name):
     component = ''
     component_image = ''
     if app_name is not None:
-        app_name = app_name.strip('/')
+        app_name = app_name.replace('docs-demos-dashbio/', '').strip('/')
         if len(app_name) > 0: 
             component = eval('{}.component'.format(app_name))
             component_image = eval('{}.component_image'.format(app_name))
