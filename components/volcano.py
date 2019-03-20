@@ -7,7 +7,7 @@ import pandas as pd
 df = pd.read_csv("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/volcano_data1.csv")
 component = dcc.Graph(figure=dashbio.VolcanoPlot(
   dataframe=df
-))
+), style={'width': '800px'})
 
 component_image = html.Img(
     src='data:image/png;base64,{}'.format(
@@ -17,7 +17,7 @@ component_image = html.Img(
             ).read()
         ).decode()
     ),
-    style={'width': '100%'}
+    style={'width': '800px', 'position': 'relative', 'top': '1px'}
 )
 
 
