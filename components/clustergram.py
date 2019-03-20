@@ -9,12 +9,13 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/dash-bio/master/tests
 data = df.values
 
 component = dcc.Graph(figure=dashbio.Clustergram(
-  data=data,
-  column_labels=list(df.columns.values),
-  row_labels=list(df.index),
-  hide_labels=['row'],
-  height=800,
-  width=600
+    data=data,
+    column_labels=list(df.columns.values),
+    color_threshold={'row': 150, 'col': 700},
+    row_labels=list(df.index),
+    hide_labels=['row'],
+    height=800,
+    width=600
 )[0])
 
 component_image = html.Img(
