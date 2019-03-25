@@ -61,5 +61,7 @@ def change_img(show_live, app_name):
     return component_image
 
 
+app.css.config.serve_locally = True
+
 if __name__ == '__main__':
     app.run_server(debug=True)
