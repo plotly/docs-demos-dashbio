@@ -16,7 +16,7 @@ component = dcc.Graph(figure=dashbio.Clustergram(
     hide_labels=['row'],
     height=800,
     width=600
-)[0])
+))
 
 component_image = html.Img(
     src='data:image/png;base64,{}'.format(

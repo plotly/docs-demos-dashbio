@@ -21,7 +21,7 @@ component_image = html.Img(
             ).read()
         ).decode()
     ),
-    style={'width': '800px', 'position': 'relative', 'top': '1px'}
+    style={'width': '800px', 'float': 'left'}
 )
 
 

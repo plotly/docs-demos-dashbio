@@ -11,7 +11,7 @@ component_image = ''
 
 # app code
 app = dash.Dash(__name__)
-app.scripts.config.serve_locally = True
+app.scripts.config.serve_locally = False
 app.config['suppress_callback_exceptions']=True
 
 for file_name in os.listdir('./components'):

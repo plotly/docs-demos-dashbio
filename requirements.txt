@@ -1,7 +1,5 @@
---extra-index-url https://test.pypi.org/simple/
-
-dash
-dash_html_components
-dash_bio==0.0.8rc12
+dash==0.40.0
+dash_bio==0.1.2rc3
+dash_bio_utils==0.0.3rc2
 gunicorn
-dash_daq
+dash_daq==0.1.0

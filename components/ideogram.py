@@ -14,7 +14,9 @@ component_image = html.Img(
                 './images/pic_ideogram.png', 'rb'
             ).read()
         ).decode()
-    )
+    ),
+    style={'width': '780px',
+           'float': 'left'}
 )
 
 

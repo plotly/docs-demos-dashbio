@@ -1,5 +1,5 @@
 import dash_bio as dashbio
-import urllib.request as urlreq
+import six.moves.urllib.request as urlreq
 import base64
 import dash_html_components as html
 

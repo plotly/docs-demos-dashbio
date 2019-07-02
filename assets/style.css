@@ -7,3 +7,6 @@ body {
 #test {
     display: inline-block;
 }
+#img-live {
+    width: 100vw;
+}

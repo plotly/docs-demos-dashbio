@@ -26,22 +26,25 @@ component = html.Div(dashbio.Circos(
             }
         }
     }]
-), style={'transform': 'scale(0.7)',
-          'position': 'absolute',
-          'top': '-50px',
-          'left': '-100px'})
+), style={'transform': 'scale(0.5)',
+          'width': '200vw',
+          'margin-left': '-50vw',
+          'margin-top': '-150px',
+          'text-align': 'center'})
 
-component_image = html.Img(
+component_image = html.Div(html.Img(
     src='data:image/png;base64,{}'.format(
         base64.b64encode(
             open(
                 './images/pic_circos.png', 'rb'
             ).read()
         ).decode()
-    ),
-    style={'position': 'relative',
-           'top': '37px',
-           'left': '12px'}
+    )),
+    style={'transform': 'scale(0.5)',
+           'width': '200vw',
+           'margin-left': '-50vw',
+           'margin-top': '-151px',
+           'text-align': 'center'}
 )
 
 
