@@ -18,7 +18,7 @@ component = dashbio.Molecule3dViewer(
   modelData=model_data
 )
 
-component_image = html.Img(
+component_image = html.Div(html.Img(
     src='data:image/png;base64,{}'.format(
         base64.b64encode(
             open(
@@ -26,8 +26,8 @@ component_image = html.Img(
             ).read()
         ).decode()
     ),
-    style={'width': '500px', 'margin-left': 'calc(50% - 250px)'}
-)
+    style={'width': '500px', 'display': 'inline-block'}
+), style={'text-align': 'center'})
 
 
 def callbacks(app):

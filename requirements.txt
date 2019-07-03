@@ -1,5 +1,5 @@
 dash==0.40.0
-dash_bio==0.1.2rc3
-dash_bio_utils==0.0.3rc2
+dash_bio==0.1.2rc7
+dash_bio_utils==0.0.3rc3
 gunicorn
 dash_daq==0.1.0

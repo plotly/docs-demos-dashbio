@@ -6,7 +6,7 @@ import base64
 import dash_bio_utils.xyz_reader as xyz_reader
 
 data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/speck_methane.xyz").read().decode("utf-8")
-data = xyz_reader.read_xyz(data_string=data)
+data = xyz_reader.read_xyz(data, is_datafile=False)
 
 component = html.Div(dashbio.Speck(
     data=data,
