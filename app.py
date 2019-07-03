@@ -29,7 +29,7 @@ app.layout = html.Div(id='test', children=[
     daq.ToggleSwitch(
         id='img-live',
         value=False,
-        color='#ab63fa',
+        color='#119DFF',
         style={'font-family': 'sans-serif',
                'font-variant': 'small-caps'},
         label=['image', 'live']
