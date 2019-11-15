@@ -13,7 +13,7 @@ component = dcc.Graph(figure=dashbio.Clustergram(
     column_labels=list(df.columns.values),
     color_threshold={'row': 150, 'col': 700},
     row_labels=list(df.index),
-    hide_labels=['row'],
+    hidden_labels=['row'],
     height=800,
     width=600
 ))
