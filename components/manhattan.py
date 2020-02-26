@@ -4,7 +4,7 @@ import dash_core_components as dcc
 import base64
 import pandas as pd
 
-df = pd.read_csv("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/manhattan_data.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-manhattan-plot/data/data.csv")
 component = dcc.Graph(figure=dashbio.ManhattanPlot(
     dataframe=df,
 ), style={'width': '700px'})

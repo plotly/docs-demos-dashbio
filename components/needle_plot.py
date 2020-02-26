@@ -4,7 +4,7 @@ import json
 import urllib.request as urlreq
 import base64
 
-data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/needle_PIK3CA.json").read()
+data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-needle-plot/data/PIK3CA.json").read()
 mdata = json.loads(data)
 
 component = dashbio.NeedlePlot(

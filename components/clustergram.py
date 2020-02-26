@@ -5,7 +5,7 @@ import base64
 import pandas as pd
 
 # copy docs code here
-df = pd.read_csv('https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/clustergram_mtcars.tsv', sep='	', skiprows=4).set_index('model')
+df = pd.read_csv('https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-clustergram/data/mtcars.tsv', sep='	', skiprows=4).set_index('model')
 data = df.values
 
 component = dcc.Graph(figure=dashbio.Clustergram(
