@@ -3,7 +3,7 @@ import six.moves.urllib.request as urlreq
 import base64
 import dash_html_components as html
 
-data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/alignment_viewer_p53.fasta").read().decode("utf-8")
+data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-alignment-chart/data/p53.fasta").read().decode("utf-8")
 
 component = dashbio.AlignmentChart(
     id='my-dashbio-alignmentchart',

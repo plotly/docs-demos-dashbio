@@ -4,7 +4,7 @@ import dash_bio as dashbio
 import base64
 import pandas as pd
 
-df = pd.read_csv("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/volcano_data1.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-volcano-plot/data/data1.csv")
 component = dcc.Graph(figure=dashbio.VolcanoPlot(
   dataframe=df
 ), style={'width': '800px'})

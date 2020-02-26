@@ -5,7 +5,7 @@ import base64
 import json
 
 # copy docs code here
-data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/circos_graph_data.json").read().decode("utf-8")
+data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-circos/data/graph_data.json").read().decode("utf-8")
 circos_graph_data = json.loads(data)
 
 component = html.Div(dashbio.Circos(

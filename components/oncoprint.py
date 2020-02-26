@@ -4,7 +4,7 @@ import json
 import urllib.request as urlreq
 import base64
 
-data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/sample_data/oncoprint_dataset3.json").read().decode("utf-8")
+data = urlreq.urlopen("https://raw.githubusercontent.com/plotly/dash-bio/master/tests/dashbio_demos/dash-onco-print/data/dataset3.json").read().decode("utf-8")
 data = json.loads(data)
 
 component = dashbio.OncoPrint(
