@@ -2,7 +2,7 @@
 
 ## About
 
-This app is used in the [`dash_bio`](https://dash.plot.ly/dash-bio) docs as
+This app is used in the [`dash_bio`](https://dash.plotly.com/dash-bio) docs as
 examples of components that are slightly "heavier" and might cause the docs
 page to load more slowly.
 
